@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Seletor universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Poppins", serif;
+}
+
+/* root > html. melhor e mais precisa */
+:root{
+  --color1: #003d54;
+  --color2: #00566a;
+  --color3: #007c8b;
+  --color4: #00b1b2;
+  --color-p:#a1a1a1;
+  --color-p-2: #868585;
+}
+
+.background-azul{
+    background: var(--color1);
+}
+
+/* Classes reutilizavéis*/
+.container{
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;;
+}
+
+
+/* Classes do site */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Share Tech Mono", serif;
+    color: white;
+}
+
+.ul{
+    display: flex;
+    align-items: center;
+}
+.ul li{
+    margin: 0 35px;
+    font-size: 16px;
+}
+.ul li a{
+    color: white;
+}
+
+/* main */
+
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.main-text{
+    width: 50%;
+    color: white;
+}
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.main-text h1{
+    font-size: 4.5rem;
+}
+.main-text h2{
+    font-size: 2.5rem;
+    color: rgb(248, 248, 78);
+}
+.main-text h3{
+    font-size: 1.2rem;
+}
+.main-img{
+    width: 50%;
+}
+.main-img img{
+    width: 100%;
+}
+.main-text div a{
+    margin: 0 30px;
+    padding: 0 5%;
+    width: 50px;
+    height: 50px;
+}

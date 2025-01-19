@@ -102,3 +102,49 @@ main .container{
     width: 50px;
     height: 50px;
 }
+
+/* menu icon */
+.menu-icon{
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+/* responsivo */
+@media (max-width: 960px){
+    .menu-icon{
+        display: block;
+    }
+    .ul {
+        position: fixed;
+        background-color: var(--color1);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ul li{
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+    .ul.ativo{
+        left: 0;
+    }
+    main .container{
+        flex-direction: column;
+    }
+    main .container .main-img,
+    main .container .main-text {
+        width: 80%;
+        text-align: center;
+    }
+    main .container .main-text h1{
+        font-size: 4rem;
+    }
+    main .container .main-text div{
+        justify-content: center;
+    }
+}

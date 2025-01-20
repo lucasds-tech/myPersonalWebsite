@@ -152,13 +152,14 @@ main .container{
     justify-content: space-between;
     margin: 50px auto;
     background-color: var(--color-p-2);
+    text-align: center;
 }
 .habilidades .hb{
     width: 30%;
     cursor: pointer;
     padding: 30px;
     border-radius: 15px;
-    transition: 0.03;
+    transition: 0.5s;
 }
 .habilidades .hb:hover{
     box-shadow: 0px 10px 67px 8px #e6e6fa85;
@@ -167,10 +168,35 @@ main .container{
 .habilidades .hb img{
     width: 80px;
 }
-.habilidades .hb .tittle{
-    margin: 13px 0;
+.habilidades .hb .titulo{
     font-weight: 650;
+    margin: 5px 0;
 }
+.habilidades h2{
+    text-align: center;
+    position: relative;
+    margin: 40px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* footer */
+footer{
+    background-color: rgb(219, 219, 219);
+    text-align: center;
+    padding: 12px;
+}   
+footer  .container .contato a{
+    padding: 0 15px;
+    margin-left: 20px;
+}
+footer .container h3{
+    font-weight: 300;
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* end footer */
 
 /* responsivo */
 @media (max-width: 960px){
@@ -200,7 +226,7 @@ main .container{
     }
     main .container .main-img,
     main .container .main-text {
-        width: 90%;
+        width: 80%;
         text-align: center;
     }
     main .container .main-text h1{
@@ -211,6 +237,7 @@ main .container{
     }
     .habilidades .container{
         flex-direction: column;
+        text-align: center;
     }
     .habilidades .hb{
         width: 100%;

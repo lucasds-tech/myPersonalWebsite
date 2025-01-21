@@ -36,7 +36,7 @@ p{
 .container{
     max-width: 1440px;
     padding: 0 5%;
-    margin: 0 auto;;
+    margin: 0 auto;
 }
 
 section
@@ -59,15 +59,15 @@ nav{
     color: white;
 }
 
-.ul{
+.nav_list{
     display: flex;
     align-items: center;
 }
-.ul li{
+.nav_list li{
     margin: 0 35px;
     font-size: 16px;
 }
-.ul li a{
+.nav_list li a{
     color: white;
 }
 
@@ -203,7 +203,7 @@ footer .container h3{
     .menu-icon{
         display: block;
     }
-    .ul {
+    .nav_list {
         position: fixed;
         background-color: var(--color1);
         top: 0;
@@ -214,11 +214,11 @@ footer .container h3{
         flex-direction: column;
         justify-content: center;
     }
-    .ul li{
+    .nav_list li{
         font-size: 20px;
         margin: 20px 0px;
     }
-    .ul.ativo{
+    .nav_list.ativo{
         left: 0;
     }
     main .container{
@@ -241,5 +241,10 @@ footer .container h3{
     }
     .habilidades .hb{
         width: 100%;
+    }
+
+    footer 
+    footer .container h3{
+        font-size: 13px;
     }
 }

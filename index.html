@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Lucas da Silva</title>
 </head>
+
 <body>
     <div class="background-azul">
         <!-- header (cabeçario da pagina) -->
         <header>
             <!-- container -->
             <div class="container">
-                <nav>
+                <nav class="nav">
                     <div class="logo">
                         <a href="index.html">LS -Tech</a>
                     </div>
-                    <ul class="ul">
-                        <li> <a href="#"> Início </a> </li>
-                        <li> <a href="#"> Sobre mim</a> </li>
-                        <li> <a href="#"> Habilidades </a> </li>
-                        <li> <a href="#"> Contato </a> </li>
-                    </ul>
-                    <div class="menu-icon">
+
+                    <div class="nav">
+                        <ul class="nav_list">
+                            <li class="nav_item"><a href="#home" class="nav_link active"> Início </a></li>
+                            <li class="nav_item"><a href="#about" class="nav_link "> Sobre mim</a> </li>
+                            <li class="nav_item"><a href="#skills" class="nav_link "> Habilidades </a> </li>
+                            <li class="nav_item"><a href="#contact" class="nav_link "> Contato </a> </li>
+                        </ul>
+                    </div>
+                    <div class="menu-icon" id="home">
                         <img src="img/menu.png" alt="icone menu">
                     </div>
                 </nav>
             </div>
-             <!-- end container -->
+            <!-- end container -->
         </header>
         <!-- end header-->
 
@@ -49,7 +54,7 @@
                         <a href="https://www.linkedin.com/in/lucasds-tech/" target="_blank">
                             <img src="img/linkedin.png" alt="linkedin">
                         </a>
-                        <a href="https://wa.me/5511951391535" target="_blank" >
+                        <a href="https://wa.me/5511951391535" target="_blank">
                             <img src="img/whatsapp.png" alt="whatsapp">
                         </a>
                     </div>
@@ -59,7 +64,7 @@
                 <div class="main-img">
                     <img src="img/myphoto.png" alt="myphoto">
                 </div>
-                    <!-- end main img -->
+                <!-- end main img -->
             </div>
             <!-- end container -->
         </main>
@@ -67,25 +72,38 @@
     </div>
     <!-- end background azul-->
     <!-- sobre -->
-    <section class="sobre" class="container">
-         <h2 class="section-tittle sobre-mim">
-             Sobre mim        
-         </h2>
-        <!--sobre mim-->
-        <p class="sobre-mim-text">
-            Olá, seja bem-vindo! Me chamo Lucas da Silva tenho 25 anos e sou um futuro Desenvolvedor Fullstack, em constante aprendizado e desenvolvimento na área de tecnologia. Atualmente, estou-me graduando em Análise e Desenvolvimento de Sistemas, com um grande interesse e dedicação ao front-end e back-end.
-        </p>
-        <p class="sobre-mim-text">
-            Minha trajetória profissional começou de forma desafiadora, atuando como freelancer em um restaurante, onde aprendi a importância da organização e do trabalho em equipe. Pouco tempo depois, decidi abraçar novos desafios ao ingressar nas Forças Armadas Brasileiras, onde já atuo há 7 anos. Essa experiência me proporcionou disciplina, resiliência e a capacidade de resolver problemas sob pressão e qualidades que levo comigo para todas as áreas da minha vida.
-        </p>
-        <p class="sobre-mim-text">
-            Com muita dedicação nos estudos, venho aprimorando meu inglês e trabalhando em projetos pessoais para consolidar meu aprendizado. Tenho experiência prática com tecnologias como Java, Spring Boot, React, HTML, CSS, PostgreSQL para operações em banco de dados relacionais e MongoDB para não relacionais. Além disso, estou habituado ao consumo de APIs e ao uso de ferramentas de versionamento como Git e GitHub. Estou me preparando para ser um profissional Fullstack, unindo dedicação e vontade de aprender para contribuir de forma significativa com projetos inovadores e equipes comprometidas.
-        </p>   
-        <!--end sobre mim-->     
-    </section>
+    <div class="container">
+        <section class="sobre" id="about">
+            <h2 class="section-tittle sobre-mim">
+                Sobre mim
+            </h2>
+            <!--sobre mim-->
+            <p class="sobre-mim-text">
+                Olá, seja bem-vindo! Me chamo Lucas da Silva tenho 25 anos e sou um futuro Desenvolvedor Fullstack, em
+                constante aprendizado e desenvolvimento na área de tecnologia. Atualmente, estou-me graduando em Análise
+                e Desenvolvimento de Sistemas, com um grande interesse e dedicação ao front-end e back-end.
+            </p>
+            <p class="sobre-mim-text">
+                Minha trajetória profissional começou de forma desafiadora, atuando como freelancer em um restaurante,
+                onde aprendi a importância da organização e do trabalho em equipe. Pouco tempo depois, decidi abraçar
+                novos desafios ao ingressar nas Forças Armadas Brasileiras, onde já atuo há 7 anos. Essa experiência me
+                proporcionou disciplina, resiliência e a capacidade de resolver problemas sob pressão e qualidades que
+                levo comigo para todas as áreas da minha vida.
+            </p>
+            <p class="sobre-mim-text">
+                Com muita dedicação nos estudos, venho aprimorando meu inglês e trabalhando em projetos pessoais para
+                consolidar meu aprendizado. Tenho experiência prática com tecnologias como Java, Spring Boot, React,
+                HTML, CSS, PostgreSQL para operações em banco de dados relacionais e MongoDB para não relacionais. Além
+                disso, estou habituado ao consumo de APIs e ao uso de ferramentas de versionamento como Git e GitHub.
+                Estou me preparando para ser um profissional Fullstack, unindo dedicação e vontade de aprender para
+                contribuir de forma significativa com projetos inovadores e equipes comprometidas.
+            </p>
+            <!--end sobre mim-->
+        </section>
+    </div>
     <!-- end sobre -->
     <!-- section habilidades -->
-    <section class="habilidades">
+    <section class="habilidades" id="skills">
         <h2 class="section-tittle habilidades">Habilidades</h2>
         <div class="container">
             <div class="hb">
@@ -110,12 +128,12 @@
                 </p>
             </div>
         </div>
-    </section> 
+    </section>
     <!-- end section habilidades -->
     <!-- footer -->
     <footer>
         <div class="container">
-            <div class="contato">
+            <div class="contato" id="contact">
                 <a href="https://github.com/lucasds-tech" target="_blank">
                     <img src="img/github-black.png" alt="github">
                 </a>
@@ -125,8 +143,8 @@
                 <a href="mailto:lucas.dasilva09@hotmail.com" target="_blank">
                     <img src="img/email.png" alt="email">
                 </a>
-                <a href="https://wa.me/5511951391535" target="_blank" >
-                     <img src="img/whatsapp.png" alt="whatsapp">
+                <a href="https://wa.me/5511951391535" target="_blank">
+                    <img src="img/whatsapp.png" alt="whatsapp">
                 </a>
             </div>
             <h3 class="container"> © 2025 Lucas da Silva. Todos os direitos reservados.</h3>
@@ -136,4 +154,5 @@
     <!-- end footer-->
     <script src="js/main.js"></script>
 </body>
+
 </html>

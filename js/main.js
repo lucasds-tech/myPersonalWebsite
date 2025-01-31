@@ -22,6 +22,8 @@ const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction(){
     // Ativando link
+    navList.classList.add('ativo');
+    document.querySelector('.menu-icon img').src = 'img/menu.png'
     navLink.forEach(n => n.classList.remove('active'))
     this.classList.add('active')
     document.body.style.overflow = "scroll";

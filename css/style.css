@@ -10,6 +10,7 @@
     text-decoration: none;
     list-style: none;
 }
+
 body,
 p{
     font-family: "Poppins", serif;
@@ -63,10 +64,12 @@ nav{
     display: flex;
     align-items: center;
 }
+
 .nav_list li{
     margin: 0 35px;
     font-size: 16px;
 }
+
 .nav_list li a{
     color: white;
 }
@@ -79,25 +82,31 @@ main .container{
     justify-content: space-between;
     margin-top: 30px;
 }
+
 .main-text{
     width: 50%;
     color: white;
 }
+
 .main-text div{
     display: flex;
     align-items: right;
     margin-top: 20px;
 }
+
 .main-text h1{
     font-size: 4.5rem;
 }
+
 .main-text h2{
     font-size: 2.5rem;
     color: rgb(248, 248, 78);
 }
+
 .main-text h3{
     font-size: 1.2rem;
 }
+
 .main-text p {
     color: #c7c7c7;
 }
@@ -105,9 +114,11 @@ main .container{
 .main-img{
     width: 50%;
 }
+
 .main-img img{
     width: 100%;
 }
+
 .main-text div a{
     margin: 0 30px;
     width: 50px;
@@ -130,6 +141,7 @@ main .container{
     font-size: 2.5rem;
     font-weight: bold;
 }
+
 .section-tittle::after{
     content: '';
     width: 100px;
@@ -140,6 +152,7 @@ main .container{
     bottom: -5px;
     transform: translateX(-50%);
 }
+
 .sobre p{
     margin-bottom: 1rem;
     padding: 0 10%;
@@ -159,6 +172,7 @@ main .container{
     background-color: var(--color-p-2);
     text-align: center;
 }
+
 .habilidades .hb{
     width: 30%;
     cursor: pointer;
@@ -166,6 +180,7 @@ main .container{
     border-radius: 15px;
     transition: 0.5s;
 }
+
 .habilidades .hb:hover{
     box-shadow: 0px 10px 67px 8px #e6e6fa85;
 }
@@ -173,10 +188,12 @@ main .container{
 .habilidades .hb img{
     width: 80px;
 }
+
 .habilidades .hb .titulo{
     font-weight: 650;
     margin: 5px 0;
 }
+
 .habilidades h2{
     text-align: center;
     position: relative;
@@ -195,6 +212,76 @@ main .container{
     font-weight: bold;
 }
 
+.slider{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+    background-color: #131b1b;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex; 
+}
+
+.slider-content input{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+    width: 37%;
+}
+
+.nav-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -3%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn{
+    text-align: center;
+    border: 2px solid #FFF;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.nav-manual .manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: #FFF;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: #FFF;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+/* end section projetos*/
+
 /* footer */
 footer{
     background-color: rgb(250, 250, 250);
@@ -206,7 +293,6 @@ footer .container p{
     font-weight: 300;
     font-size: 16px;
 }
-
 /* end footer */
 
 /* responsivo */
@@ -252,6 +338,18 @@ footer .container p{
     }
     .habilidades .hb{
         width: 100%;
+    }
+
+    .nav-manual{
+        position: absolute;
+        width: 100%;
+        margin-top: -10%;
+        align-items: center;
+    }
+
+    .slide-box img{
+        width: 80%;
+        text-align: center;
     }
 
     footer 

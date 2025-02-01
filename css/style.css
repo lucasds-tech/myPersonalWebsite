@@ -321,11 +321,17 @@ footer .container p{
     main .container{
         flex-direction: column;
     }
-    main .container .main-img,
+    
     main .container .main-text {
         width: 80%;
         text-align: center;
     }
+    
+    main .container .main-img{
+        text-align: center;
+        width: 90%;
+    }
+
     main .container .main-text h1{
         font-size: 4rem;
     }
@@ -348,7 +354,7 @@ footer .container p{
     }
 
     .slide-box img{
-        width: 80%;
+        width: 90%;
         text-align: center;
     }
 
